@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEBSITE</title>
+
+    <script src="https://kit.fontawesome.com/8c3d1ea12b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    
+
+    <section id="home">
+
+        <nav class="navbar">
+            <div class="h-contents">
+                <div class="logo"><a href="#home">MaJOR</a></div>
+                <ul class="menu-list">
+                    <div class="icon c-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#service">SERVICES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+            <!-- JS SECTION -->
+            <script>
+                const navbar = document.querySelector(".navbar");
+
+                const body = document.querySelector("body");
+                const menu = document.querySelector(".menu-list");
+                const menuBtn = document.querySelector(".menu-btn");
+                const cBtn = document.querySelector(".c-btn");
+        
+                menuBtn.onclick =()=>{
+        
+                    menu.classList.add("active"); 
+                    menuBtn.classList.add("hide");
+                    body.classList.add("DisabledScroll");
+                }
+
+                cBtn.onclick =()=>{
+                    menu.classList.remove("active");
+                    menuBtn.classList.remove("hide");
+                    body.classList.add("DisabledScroll");
+                }
+
+                window.onscroll = ()=>{
+                    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+                }
+        
+                
+            </script>
+
+            <!-- js end here -->
+
+            <div class="home-contents">
+                <!--
+                <h1>CREATIVITY HAVE NEW LEVEL</h1>
+                <h4>DESIGN / DEVELOPMENT / PHOTOGRAPHY</h4>
+                -->
+
+            </div>
+
+
+
+    </section>
+
+    <section id="about">
+
+        <div class="about-me">
+            <h2>ABOUT MYSELF</h2><br>
+            <p>Here are some information about me.To learn more about me feel free to contact me on my social accounts.</p>
+        </div>
+
+        <div class="cards">
+
+
+            <div class="card">
+                <div class="cimg1">
+                    <div class="ccont">
+                        <h2 class="title">HOBBY</h2>
+                        <p class="desc">Well from childhood my curiosity was to learn and explore new things. after discovering a lot's of stuffs, i turned out guitar into my passion. because 3strings can speak a thoushands of word.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="cimg2">
+                    <div class="ccont">
+                        <h2 class="title">GOOD THINGS</h2>
+                        <p class="desc">True friendship multiplies the good in life and divides its evils. Strive to have friends, for life without friends is like life on a desert island. to find one real friend in a lifetime is good fortune, to keep him is a blessing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cimg3">
+                    <div class="ccont">
+                        <h2 class="title">PERSONALITY</h2>
+                        <p class="desc">I think I appear very innocent and soft, but I’m actually very dark and edgy. It’s a weird dichotomy.I am what I am… I will never try to be someone else.because I don’t follow the crowd, crowd follows me.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="service">
+        <div class="s-title">
+            <h2>MY SERVICES</h2>
+        </div>
+
+        <section class="services">
+            <div class="service-card">
+                <div class="service-card-content">
+                    <i class="fa fa-code"></i>
+                        <h3>Web Development</h3>
+                            <p>Providing a fully responsive website at your need. Made from scratch with HTML,CSS,JAVASCRIPT.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card-content">
+                    <i class="fa fa-paint-brush"></i>
+                        <h3>Web Design</h3>
+                            <p>Get a creative design for your website.We don't just build websites, we build websites that SELLS</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card-content">
+                    <i class="fa fa-desktop"></i>
+                        <h3>Responsive Design</h3>
+                            <p>Responsive web design is about creating web pages that look good on all devices.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card-content">
+                    <i class="fa fa-mobile"></i>
+                        <h3>App Development</h3>
+                            <p>Build your App by professionals. And get good sales with a great services.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card-content">
+                    <i class="fa fa-line-chart"></i>
+                        <h3>Advertisement</h3>
+                            <p>Wanna grow your business all-over the country? Try our Advertisement service</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card-content">
+                    <i class="fa fa-bugs"></i>
+                        <h3>Pen-Testing</h3>
+                            <p>I'll scan for vulnerability on your website, and protect from web-attacks</p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </section>
+
+    <section id="contact">
+        
+    </section>
+
+    
+</body>
+</html>
